@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -12,13 +13,15 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #06283d;
+  margin: 1rem;
 }
 
 .container {
+  max-width: 100%;
   position: relative;
   background-color: #eee;
   padding: 1rem;
-  min-width: 20rem;
+  width: 30rem;
 }
 
 .search-box {
@@ -38,9 +41,21 @@ body {
 }
 
 .search-box button {
+  font-size: 1.6rem;
+  font-weight: bold;
   display: block;
   width: 100%;
   background-color: #06283d;
   color: #fff;
   margin-bottom: 1rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.search-box button:hover {
+  background-color: #0b4569;
+  cursor: pointer;
+}
+
+.not-found {
+  opacity: 0;
 }
