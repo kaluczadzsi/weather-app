@@ -1,11 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-size: 120%;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: #222;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card {
+  background-color: #000000d0;
+  padding: 1rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 26rem;
+  margin: 1rem;
+  color: #fff;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar,
+.search button {
+  outline: none;
+  border: none;
+  background-color: #7c7c7c2b;
+}
+
+.search button {
+  margin: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  height: 2.875rem;
+  width: 2.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.search button:hover {
+  background-color: #7c7c7c6b;
+  cursor: pointer;
+}
+
+.search-bar {
+  padding: 0.5rem 1rem;
+  border-radius: 18px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
 }
