@@ -31,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .search-bar,
@@ -44,8 +45,8 @@ body {
   margin: 0.5rem;
   border-radius: 50%;
   color: #fff;
-  height: 2.875rem;
-  width: 2.875rem;
+  height: 2.375rem;
+  width: 2.375rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,4 +64,18 @@ body {
   color: #fff;
   font-family: inherit;
   font-size: 1rem;
+  width: calc(100% - 100px);
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.city {
+  margin-bottom: 1rem;
 }
