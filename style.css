@@ -17,6 +17,11 @@ body {
   background-position: center center;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   background-color: #000000d0;
   padding: 1rem;
@@ -72,10 +77,19 @@ body {
   font-weight: bold;
 }
 
-.description {
-  margin-top: 1rem;
-}
-
 .city {
   margin-bottom: 1rem;
+}
+
+.weather.loading {
+  visibility: hidden;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: 'Loading...';
+  color: #fff;
+  position: absolute;
+  top: 0;
 }
